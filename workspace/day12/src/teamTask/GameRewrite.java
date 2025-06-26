@@ -21,6 +21,9 @@ public class GameRewrite {
 			sc.nextLine(); // 버퍼지우기...
 			if (this.level <= 5 && level > 0) {
 				this.answer = (int) (Math.random() * this.level * 20);
+				if (this.answer == 0) {
+					this.answer++;  //this.answer가 0이 되는 경우가 있어서 0 일 때 1추가해줬습니다
+				}
 				System.out.println("난이도는 " + this.level + "이고, 정답은 " + this.answer + "입니다.");
 				System.out.println("범위는 1부터 " + this.level * 20 + "까지 입니다.");
 				this.limit = this.level * 5;
@@ -47,14 +50,23 @@ public class GameRewrite {
 		if (this.input > this.answer) {
 			System.out.println("!!!!!!!!!!!!!!!!정답보다 큰수를 입력했습니다!!");
 		} else {
-			System.out.println("!!!!!!!!!!!!!!!!!!정답보다 작은를 입력했습니다!!");
+			System.out.println("!!!!!!!!!!!!!!!!!!정답보다 작은수를 입력했습니다!!");
 		}
 
-		do {
+		if (this.setHintRange) {
 			this.rn1 = (int) (Math.random() * 10); // 3 5
 			this.rn2 = (int) (Math.random() * 10); // 3 5
 			this.setHintRange = false;
-		} while (setHintRange);
+		}
+		
+		//힌트 범위가 정답 범위를 벗어나면 (범위와 정답의 차이만큼만)으로 조정하기 
+		if ((this.answer - this.rn1) < 0) {
+			this.rn1 = this.answer;
+		}
+		if ((this.answer + this.rn2) > 0) {
+			this.rn2 = this.level * 20 - this.answer;
+		}
+
 
 		if (this.tryCount == this.limit - 1) {
 			this.setHintRange = true;
@@ -75,7 +87,7 @@ public class GameRewrite {
 			if (input < 1 || input > (this.level * 20)) {
 				System.out.println("!!!!!!!!범위를 벗어난 입력입니다.!!!!!!!!!");
 			} else {
-				System.out.println(tryCount + "번 입력을 했습니다!");
+				System.out.println(tryCount + 1 + "번 입력을 했습니다!");
 				if (checkAnswer()) {
 					break;
 				}
