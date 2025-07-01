@@ -47,13 +47,13 @@ public class Gugudan {
 		//	출력(줄바꿈)
 		//바깥 for문 종료 
 		
-//		for (int i = 1; i <= 9; i++) {
-//			System.out.println(i + "단");
-//			for (int j = 1; j <= 9; j++) {
-//				System.out.println(i + " X " + j + " = " + i*j);
-//			}
-//			System.out.println();
-//		}
+		for (int i = 1; i <= 9; i++) {
+			System.out.println(i + "단");
+			for (int j = 1; j <= 9; j++) {
+				System.out.println(i + " X " + j + " = " + i*j);
+			}
+			System.out.println();
+		}
 		
 	
 		//2번문제 로직구성 
