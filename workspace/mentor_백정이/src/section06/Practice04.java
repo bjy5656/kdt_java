@@ -52,6 +52,17 @@ public class Practice04 {
 			}
 			System.out.println();
 		}
+
+//		char c = 65535; 
+//		short b = 65535;
+//		System.out.println(c);
+//		System.out.println();
+//		char a = 0;
+//		int b = 0;
+
 		
 	}
+	
+
+	
 }
