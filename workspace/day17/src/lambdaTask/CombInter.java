@@ -1,4 +1,4 @@
-package lambdaTest02;
+package lambdaTask;
 
 @FunctionalInterface
 public interface CombInter {

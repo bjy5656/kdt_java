@@ -1,4 +1,4 @@
-package lambdaTest02;
+package lambdaTask;
 //8번 : 함수형 인터페이스 
 
 @FunctionalInterface

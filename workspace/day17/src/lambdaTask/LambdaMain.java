@@ -1,4 +1,4 @@
-package lambdaTest02;
+package lambdaTask;
 //람다 실습
 public class LambdaMain {
 	public static void main(String[] args) {

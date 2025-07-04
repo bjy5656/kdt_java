@@ -1,4 +1,4 @@
-package lambdaTest02;
+package lambdaTask;
 //7번 : 함수형 인터페이스의 객체 람다식으로 만들기
 public class FunctionMain {
    public static void main(String[] args) {
