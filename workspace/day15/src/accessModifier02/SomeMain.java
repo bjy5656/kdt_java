@@ -15,5 +15,16 @@ public class SomeMain {
       
       AccessTest test = new AccessTest(); // 자식클래스
       test.testAccess(); // 상속으로 접근 가능
+      
+      double db = 3.11111111111111111111;
+      float fl = 3.11f;
+      System.out.printf("%f",db);
+      System.out.println();
+      System.out.println(fl);
+      System.out.printf("\u0000");
+      System.out.println();
+      char c = ' ';
+      int i = c;
+      System.out.println(i);
    }
 }

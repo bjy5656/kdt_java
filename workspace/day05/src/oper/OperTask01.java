@@ -54,5 +54,6 @@ public class OperTask01 {
 		int change = money % PRICE;
 		System.out.println(song + "곡을 부를 수 있으며 잔돈은 " + change + "원 입니다.");
 		sc.close();
+		
 	}
 }
