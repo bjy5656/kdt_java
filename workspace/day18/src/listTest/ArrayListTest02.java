@@ -29,6 +29,5 @@ public class ArrayListTest02 {
       
       MyClass<String> mc2 = new MyClass<String>("java");
       mc2.printData();
-      Integer.par
    }
 }
