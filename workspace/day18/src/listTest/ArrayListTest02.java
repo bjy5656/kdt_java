@@ -15,7 +15,6 @@ class MyClass<T>{
    void printData() {
       System.out.println(data);
    }
-   
 }
 
 

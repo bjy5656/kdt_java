@@ -46,7 +46,7 @@ public class ArrayListTest {
       //값 가져오기 : index 번호로 특정 값 가져오기 .get(idx)
       System.out.println(al2.get(0));
       
-      //삭제 : index번호로 삭제하고 삭제한 요소를 반환 .remove(int)
+      //삭제 : index번호로 삭제하고 삭제한 요소를 반환 .remove(idx)
       System.out.println("인덱스 1의 값 " + al2.remove(1) + "을 삭제했습니다");
       System.out.println(al2);
       
