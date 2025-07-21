@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class InputAge {
 	public static void main(String[] args) {
 //		3. 나이를 입력받아서 다음 기준으로 출력하기
-//		0 ~ 12 : 어린이입니다
+//		1 ~ 12 : 어린이입니다
 //		13 ~ 19 : 청소년입니다
 //		20 이상 : 성인입니다
 //		
@@ -29,7 +29,7 @@ public class InputAge {
 		//	출력(나이, 성인입니다) 
 		//else if age가 13 이상
 		//	출력(나이, 청소년입니다) 
-		//else if age가 0 이상  
+		//else if age가 1 이상  
 		//	출력(나이, 어린이입니다) 
 		
 		Scanner sc = new Scanner(System.in);
@@ -48,7 +48,7 @@ public class InputAge {
 			System.out.println("현재 나이는 " + age+ " 살이고 성인입니다");
 		}else if(age >= 13) {
 			System.out.println("현재 나이는 " + age+ " 살이고 청소년입니다");
-		}else if(age >= 0){
+		}else if(age >= 1){
 			System.out.println("현재 나이는 " + age+ " 살이고 어린이입니다");
 		}
 	}
@@ -57,12 +57,12 @@ public class InputAge {
 	//리턴타입 => void
 	//메소드명 validate 
 	//매개변수 => int 나이 
-	//if 나이 < 0 
+	//if 나이 <= 0 
 	//	OutOfBoundsException 발생 
 	//	
 	
 	static void validate(int age) throws OutOfBoundsException{
-		if(age < 0) {
+		if(age <= 0) {
 			throw new OutOfBoundsException();
 		}
 	}

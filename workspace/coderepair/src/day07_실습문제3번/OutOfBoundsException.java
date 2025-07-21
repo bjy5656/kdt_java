@@ -3,7 +3,7 @@ package day07_실습문제3번;
 public class OutOfBoundsException extends RuntimeException{
 
 	public OutOfBoundsException() {
-		super("음수가 입력되었습니다");
+		super("0 이하의 값이 입력되었습니다");
 	}
 
 	
